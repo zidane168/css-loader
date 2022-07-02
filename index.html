@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title> CSS Loader </title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<head>
+		<title>
+			CSS Loader
+		</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 
-        <style>
-            .min-width-introduce {
-                min-width: 100px;
+		<style>
+			.min-width-introduce {
+				min-width: 100px;
+			}
+
+			.bold {
+				font-weight: bold;
+			}
+
+            .blue {
+                color: blue;
             }
 
-            .bold {
-                font-weight: bold;
+            .box {
+                text-align: center;
+                justify-content: center;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                border-radius: 10px;
+                box-shadow: 3px 3px #333;
+                padding: 10px;
+                line-height: 30px;
+                font-size: 20px;
+                border: 1px solid black;
+                margin-left: 20%;
+                margin-right: 20%;
             }
-        </style>
-        
-    </head>
+		</style>
 
-    <body class="body">
+	</head>
 
-        <div stype="display: flex; justify-content: center"> 
-                
-            <span class="min-width-introduce bold"> Author: </span> Zidane
-            <span class="min-width-introduce bold"> Web: </span> <a href="https://learn-tech-tips.blogspot.com"> https://learn-tech-tips.blogspot.com </a>
-        </div>
-        <!-- classic 1 -->
-        <div class="d-flex justify-content-center">
-            <div class="panel panel-0">
-                <h1 class="panel_h1"> 1 </h1>
-            </div>
-            <div class="panel panel-1">
-                <h1 class="panel_h1"> HTML </h1>
-                &lt;div class=&quot;classic-1&quot;&gt;
-            </div>
-            <div class="panel panel-2">
-                <h1 class="panel_h1"> CSS </h1>
-           
-                <pre>
+	<body class="body">
+
+		<div class="box">
+
+			<div>
+				<span class="min-width-introduce bold blue">
+					Author:
+				</span>
+				Zidane
+			</div>
+
+			<div>
+				<span class="min-width-introduce bold blue">
+					Web:
+				</span>
+				<a href="https://learn-tech-tips.blogspot.com">
+					https://learn-tech-tips.blogspot.com
+				</a>
+			</div>
+		</div>
+		<!-- classic 1 -->
+		<div class="d-flex justify-content-center">
+			<div class="panel panel-0">
+				<h1 class="panel_h1">
+					1
+				</h1>
+			</div>
+			<div class="panel panel-1">
+				<h1 class="panel_h1">
+					HTML
+				</h1>
+				&lt;div class=&quot;classic-1&quot;&gt;
+			</div>
+			<div class="panel panel-2">
+				<h1 class="panel_h1">
+					CSS
+				</h1>
+
+				<pre>
 
     [class*=classic]:before {
         content: "Loading...";
@@ -56,26 +96,34 @@
     }
     @keyframes c3 {to{background-position: 80% 100%}}
                 </pre>
-            </div>
-            <div class="panel panel-3">
-                <h1 class="panel_h1"> Demo </h1>
-                <div class="classic-1"> </div>
-            </div>
-        </div>
+			</div>
+			<div class="panel panel-3">
+				<h1 class="panel_h1">
+					Demo
+				</h1>
+				<div class="classic-1"></div>
+			</div>
+		</div>
 
-        <!-- classic 2 -->
-        <div class="d-flex justify-content-center">
-            <div class="panel panel-0">
-                <h1 class="panel_h1"> 2 </h1>
-            </div>
-            <div class="panel panel-1">
-                <h1 class="panel_h1"> HTML </h1>
-                &lt;div class=&quot;classic-2&quot;&gt;
-            </div>
-            <div class="panel panel-2">
-                <h1 class="panel_h1"> CSS </h1>
-            
-                <pre>
+		<!-- classic 2 -->
+		<div class="d-flex justify-content-center">
+			<div class="panel panel-0">
+				<h1 class="panel_h1">
+					2
+				</h1>
+			</div>
+			<div class="panel panel-1">
+				<h1 class="panel_h1">
+					HTML
+				</h1>
+				&lt;div class=&quot;classic-2&quot;&gt;
+			</div>
+			<div class="panel panel-2">
+				<h1 class="panel_h1">
+					CSS
+				</h1>
+
+				<pre>
     [class*=classic]:before {
         content: "Loading...";
     }
@@ -88,27 +136,35 @@
     }
     @keyframes c4 {to{clip-path: inset(0 -1ch 0 0)}}
                 </pre>
-            </div>
-            <div class="panel panel-3">
-                <h1 class="panel_h1"> Demo </h1>
-                <div class="classic-2"> </div>
-            </div>
-        </div>
+			</div>
+			<div class="panel panel-3">
+				<h1 class="panel_h1">
+					Demo
+				</h1>
+				<div class="classic-2"></div>
+			</div>
+		</div>
 
 
-        <!-- dot1 -->
-        <div class="d-flex justify-content-center">
-            <div class="panel panel-0">
-                <h1 class="panel_h1"> 1 </h1>
-            </div>
-            <div class="panel panel-1">
-                <h1 class="panel_h1"> HTML </h1>
-                &lt;div class=&quot;dots-1&quot;&gt;
-            </div>
-            <div class="panel panel-2">
-                <h1 class="panel_h1"> CSS </h1>
-           
-                <pre>
+		<!-- dot1 -->
+		<div class="d-flex justify-content-center">
+			<div class="panel panel-0">
+				<h1 class="panel_h1">
+					1
+				</h1>
+			</div>
+			<div class="panel panel-1">
+				<h1 class="panel_h1">
+					HTML
+				</h1>
+				&lt;div class=&quot;dots-1&quot;&gt;
+			</div>
+			<div class="panel panel-2">
+				<h1 class="panel_h1">
+					CSS
+				</h1>
+
+				<pre>
     .dots-1 {
         width: 50px;
         height: 12px;
@@ -124,26 +180,34 @@
         }
     }
                 </pre>
-            </div>
-            <div class="panel panel-3">
-                <h1 class="panel_h1"> Demo </h1>
-                <div class="dots-1"> </div>
-            </div>
-        </div>
+			</div>
+			<div class="panel panel-3">
+				<h1 class="panel_h1">
+					Demo
+				</h1>
+				<div class="dots-1"></div>
+			</div>
+		</div>
 
-        <!-- dot2 -->
-        <div class="d-flex  justify-content-center">
-            <div class="panel panel-0">
-                <h1 class="panel_h1"> 2 </h1>
-            </div>
-            <div class="panel panel-1">
-                <h1 class="panel_h1"> HTML </h1>
-                &lt;div class=&quot;dots-2&quot;&gt;
-            </div>
-            <div class="panel panel-2">
-                <h1 class="panel_h1"> CSS </h1>
-           
-                <pre>
+		<!-- dot2 -->
+		<div class="d-flex  justify-content-center">
+			<div class="panel panel-0">
+				<h1 class="panel_h1">
+					2
+				</h1>
+			</div>
+			<div class="panel panel-1">
+				<h1 class="panel_h1">
+					HTML
+				</h1>
+				&lt;div class=&quot;dots-2&quot;&gt;
+			</div>
+			<div class="panel panel-2">
+				<h1 class="panel_h1">
+					CSS
+				</h1>
+
+				<pre>
    
 .dots-2 {
     width: 50px;
@@ -175,14 +239,15 @@
     }
 }
                 </pre>
-            </div>
-            <div class="panel panel-3">
-                <h1 class="panel_h1"> Demo </h1>
-                <div class="dots-2"> </div>
-            </div>
-        </div>
-   
-     
-   
-    </body>
+			</div>
+			<div class="panel panel-3">
+				<h1 class="panel_h1">
+					Demo
+				</h1>
+				<div class="dots-2"></div>
+			</div>
+		</div>
+
+
+	</body>
 </html>
