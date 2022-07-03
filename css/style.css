@@ -53,6 +53,10 @@ body {
     min-width: 200px;
 }
 
+
+
+/* dot */ 
+
 .dots-1 {
     width: 50px;
     height: 12px;
@@ -97,6 +101,38 @@ body {
     }
 }
 
+
+.dots-3 {
+	width: 15px;
+	aspect-ratio: 1;
+	position: relative;
+}
+.dots-3::before,
+.dots-3::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	background: #000;
+}
+.dots-3::before {
+	box-shadow: -25px 0;
+	animation: d3-1 1s infinite linear;
+}
+.dots-3::after {
+	transform: rotate(0deg) translateX(25px);
+	animation: d3-2 1s infinite linear;
+}
+
+@keyframes d3-1 {
+	100%{transform: translateX(25px)}
+}
+@keyframes d3-2 {
+	100%{transform: rotate(-180deg) translateX(25px)}
+}
+
+
+/* classic */ 
 [class*=classic]:before {
     content: "Loading...";
 }
@@ -124,3 +160,49 @@ body {
     animation:c4 1s steps(4) infinite;
 }
 @keyframes c4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+
+
+
+/* infinity */ 
+.infinity-1 {
+	width:calc(80px / 0.707); /* 0.707 = cos(45deg) */
+	height:14px;
+	background: repeating-linear-gradient(-45deg, currentColor 0 15px,#0000 0 20px) left/200% 100%;
+	animation:i3 2s infinite linear;
+}
+@keyframes i3 {
+	100% {background-position:right}
+}
+
+	
+.infinity-2 {
+	width:90px;
+	height:12px;
+	background: 
+		linear-gradient( 90deg,currentColor 50%,#0000 0) 0 0%,
+		linear-gradient(-90deg,currentColor 50%,#0000 0) 0 0%;
+	background-size: 20px 100%;
+	background-repeat: repeat-x;
+	animation:i10 1s infinite linear;
+}
+@keyframes i10 {
+	100% {background-position: -20px 0%,20px 0%}
+}
+
+.infinity-3 {
+	width:90px;
+	height:14px;
+	background: 
+		linear-gradient(90deg,#0000 16px, currentColor 0 30px, #0000 0),
+		radial-gradient(circle closest-side at 68% 50%, currentColor 92%,#0000),
+		conic-gradient(from   45deg at calc(100% - 7px) 50%,currentColor 90deg,#0000 0),
+		conic-gradient(from -135deg at 7px 50%,currentColor 90deg,#0000 0);
+	background-position: 0 0;
+	background-size:calc(3*100%/4) 100%;
+	background-repeat: repeat-x;
+	animation:i9 2s infinite linear;
+}
+@keyframes i9 {
+	100% {background-position: -300% 0}
+}
